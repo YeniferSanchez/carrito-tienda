@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+    <div id="alerta" class="alerta">Producto agregado al carrito</div>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/logo.png" id="logo" width="100" />
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <span class="num-elementos">0</span>
+                            <img src="img/cart.png" id="img-carrito" />
+
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th>Total</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                                <div class="totalapagar">
+                                    <h3>Total a pagar: S/<span id="total-a-pagar">0.00</span></h3>
+                                </div>
+                                <a href="#" id="paga-pedido" class="button u-full-width">Pagar</a>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <form action="#" id="busqueda" method="post" class="formulario">
+                    <input class="u-full-width" type="text" placeholder="¿Que vomeras hoy? Busca tu comida favorita"
+                        id="buscador" />
+                    <input type="submit" id="submit-buscador" class="submit-buscador" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="lista-comidas" class="container">
+        <h3 id="encabezado" class="encabezado">Hamburguesas</h3>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-duo-extrema.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Dúo Extrema</h4>
+                        <p class="precio">S/55 <span class="u-pull-right">S/22</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-a-lo-pobre-gaseosa.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4> A lo Pobre + Inca Kola</h4>
+                        <p class="precio">S/26.80 <span class="u-pull-right">S/15.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-duo-estudiantil-nuevo-agosto.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Dúo Estudiantil</h4>
+                        <p class="precio">S/51.40 <span class="u-pull-right">S/30.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-duo-a-lo-pobre.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Dúo A lo pobre</h4>
+                        <p class="precio">S/45.60 <span class="u-pull-right">S/27.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-clasica-mini-princesa.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Dúo Clásico Con Antojito</h4>
+                        <p class="precio">S/46.60 <span class="u-pull-right">S/26.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-parrillera-mini-princesa.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Parrillera con antojito</h4>
+                        <p class="precio">S/28.70<span class="u-pull-right">S/18.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-combo-cheese-tartara-nuevo-abril.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Cheesy Tartara</h4>
+                        <p class="precio">S/32.60 <span class="u-pull-right">S/22.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-combo-estudiantil-nuevo-agosto.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Combo Estudiantil</h4>
+                        <p class="precio">S/23.80 <span class="u-pull-right">S/18.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-duo-milagros.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Dúo Milagros</h4>
+                        <p class="precio">S/34.80 <span class="u-pull-right">S/28.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-loncherita-nuggets.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Loncherita Nuggets Milagros</h4>
+                        <p class="precio">S/14.80 <span class="u-pull-right">S/13.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-loncherita-pollo.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Loncherita Basica de Pollo Milagros</h4>
+                        <p class="precio">S/14.90 <span class="u-pull-right">S/13.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/800x1370-loncherita-hamburguesa.webp" class="imagen-comida u-full-width" />
+                    <div class="info-card">
+                        <h4>Loncherita Basica Milagros</h4>
+                        <p class="precio">S/14.80 <span class="u-pull-right">S/13.90</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Pedir
+                            ahora</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav id="principal" class="menu">
+                        <a class="enlace" href="#">Menú</a>
+                        <a class="enlace" href="#">Reservas</a>
+                        <a class="enlace" href="#">Eventos</a>
+                        <a class="enlace" href="#">Promociones</a>
+                        <a class="enlace" href="#">Contacto</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav id="secundaria" class="menu">
+                        <a class="enlace" href="#">Sobre Nosotros</a>
+                        <a class="enlace" href="#">Nuestro Equipo</a>
+                        <a class="enlace" href="#">Blog</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <div class="redes-sociales">
+                        <a href="#" class="icono-red-social"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icono-red-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icono-red-social"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="derechos">&copy; 2023 Bembos S.A. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
